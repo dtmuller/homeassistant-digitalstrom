@@ -47,7 +47,7 @@ async def async_setup_entry(
                 continue
 
         _LOGGER.info(f"adding scene {scene.scene_id}: {scene.name}")
-        scenes.append(DigitalstromScene(scene=scene, config_entry=entry))
+        #scenes.append(DigitalstromScene(scene=scene, config_entry=entry))
 
     scene: DigitalstromScene
     async_add_entities(scene for scene in scenes)
