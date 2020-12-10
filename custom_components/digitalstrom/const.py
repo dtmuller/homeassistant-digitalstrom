@@ -20,9 +20,6 @@ DEFAULT_ALIAS: str = "Apartment"
 
 OPTION_GENERIC_SCENES: str = "generic_scenes"
 OPTION_GENERIC_SCENES_DEFAULT: List[str] = [
-    dsconst.SCENE_SLEEPING,
-    dsconst.SCENE_WAKEUP,
-    dsconst.SCENE_PRESENT,
     dsconst.SCENE_ABSENT,
-    dsconst.SCENE_ROOM_WAKEUP,
+    dsconst.SCENE_DOOR_BELL
 ]
