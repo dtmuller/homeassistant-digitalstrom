@@ -19,7 +19,4 @@ DEFAULT_USERNAME: str = "dssadmin"
 DEFAULT_ALIAS: str = "Apartment"
 
 OPTION_GENERIC_SCENES: str = "generic_scenes"
-OPTION_GENERIC_SCENES_DEFAULT: List[str] = [
-    dsconst.SCENE_ABSENT,
-    dsconst.SCENE_DOOR_BELL
-]
+OPTION_GENERIC_SCENES_DEFAULT: List[str] = []
