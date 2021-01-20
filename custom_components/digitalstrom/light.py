@@ -45,8 +45,8 @@ async def async_setup_entry(
         if not isinstance(scene, DSColorScene) or scene.color != 1:
             continue
         # not an area or broadcast turn off scene
-        if scene.scene_id > 4:
-            continue
+        #if scene.scene_id > 4:
+        #    continue
 
         # get turn on counterpart
         scene_on: Union[DSScene, DSColorScene] = scenes.get(

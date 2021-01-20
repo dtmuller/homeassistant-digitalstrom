@@ -45,8 +45,8 @@ async def async_setup_entry(
         if not isinstance(scene, DSScene):
             continue
         # only sleeping and present
-        #if scene.scene_id not in [69, 71]:
-        #    continue
+        if scene.scene_id not in [69, 71]:
+            continue
 
         # get turn on counterpart
         scene_off: DSScene = scenes.get(
