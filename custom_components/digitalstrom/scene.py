@@ -46,6 +46,10 @@ async def async_setup_entry(
             if scene.color in (1, 2) and scene.scene_id <= 9:
                 continue
 
+        # ignore generic scenes (ABSENT, HAIL, etc.)
+        if scene.scene_id >= 64:
+            continue
+
         _LOGGER.info(f"adding scene {scene.scene_id}: {scene.name}")
         scenes.append(DigitalstromScene(scene=scene, config_entry=entry))
 
